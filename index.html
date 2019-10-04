@@ -5,6 +5,7 @@
 
     <title>Let's Gif Started!</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -18,8 +19,8 @@
         <div class ="row">
             <div class="col">
                 <div class="jumbotron bg-dark text-light">
-                    <h1 class="display-4">Hello, world!</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                    <h1 class="display-4">Reaction Gif Generator</h1>
+                    <p class="lead">Is your friend blowing up the group chat? Not quite sure how to respond with words? Let a gif do the talking!</p>
                 </div>
             </div>
         </div>
@@ -28,24 +29,22 @@
             <div class="col-8">
                 <div class="card">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <h5 class="card-title">What's the gist of your reaction?</h5>
                       <div id="buttonBox"></div>
                     </div>
                   </div>
             </div>
             <div class="col-4">
-                <div class="card">
+                <div class="card text-light bg-dark">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Don't like your choices?</h5>
                       <form>
                             <div class="form-group">
-                              <label for="userText">Enter a new thing here  </label>
-                              <input type="text" class="form-control" id="userText" placeholder="Placeholder">
+                              <label for="userText">Add your own!</label>
+                              <input type="text" class="form-control" id="userText" placeholder="enter text">
                             </div>
                             <button type="submit" class="btn btn-light" id="newTopicButton">Submit</button>
                           </form>
-                      <div id="buttonBox"></div>
                     </div>
                   </div>
             </div>
@@ -55,7 +54,7 @@
             <div class="col">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title"><span id="currentTopic"></span></h5>
                         <div id="imageBox"></div>
                     </div>
                 </div>
